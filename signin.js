@@ -73,7 +73,7 @@ function validateForm() {
 
     if (isNameValid && isEmailValid && isPasswordValid) {
         // Redirect to the To-Do List page on successful validation
-        window.location.href = "todolist.html"; 
+        window.location.href = "index.html"; 
         return false; // Prevent default form submission
     }
     return false; // Prevent form submission if validation fails
