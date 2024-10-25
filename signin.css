@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow the container to grow and take up available space */
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    border-color: #5e9ad6;
+    outline: none;
+}
+
+.error-msg {
+    display: none;
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.invalid {
+    border-color: #d9534f;
+}
+
+.valid {
+    border-color: #5cb85c;
+}
+
+.submit-button {
+    background-color: #28a745; /* Green */
+    border-color: #28a745;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    width: 100%;
+}
+
+.submit-button:hover {background-color: #218838;
+    border-color: #218838;
+}
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center text in the footer */
+    padding: 10px 0; /* Padding for the footer */
+    width: 100%; /* Full width for footer */
+}
+
+.error-msg {
+    color: #d9534f; /* Red color for error messages */
+    font-size: 14px; /* Font size for readability */
+    margin-top: 5px; /* Space between the input and error message */
+    display: none; /* Initially hide error messages */
+}
+
+/* Show error messages when there's an error */
+.invalid ~ .error-msg {
+    display: block; /* Display the error message when the field is invalid */
+}

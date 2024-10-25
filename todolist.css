@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+/* Add Task button (Blue) */
+.btn-add {
+    background-color: #007bff; /* Blue */
+    border-color: #007bff;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Delete button (Red) */
+.btn-delete {
+    background-color: #ff4c4c; /* Red */
+    border-color: #ff4c4c;
+}
+
+.btn-delete:hover {
+    background-color: #e63939;
+    border-color: #e63939;
+}
+
+/* Clear Completed button (Green) */
+.btn-clear {
+    background-color: #28a745; /* Green */
+    border-color: #28a745;
+}
+
+.btn-clear:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Checkbox tick color (Green) */
+input[type="checkbox"]:checked {
+    accent-color: #28a745; /* Green tick for checkboxes */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Submit Button (Cyan) */
+.btn-save {
+    background-color: #ffc107; /* Yellow */
+    border-color: #ffc107;
+    color: black;
+}
+
+.btn-save:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
